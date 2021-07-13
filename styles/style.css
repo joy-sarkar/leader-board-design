@@ -134,7 +134,7 @@ hr{
 }
 .course-durations{
     display: flex;
-   justify-content: space-between;
+ 
 }
 .fas.filled{
     color: #FFC014;
