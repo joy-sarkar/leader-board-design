@@ -7,10 +7,11 @@ body{
     font-family: 'Poppins', sans-serif;
 
 }
+/*
 header{
     background: #562EFF;
     height: 80px;
-    width: 100%;
+    width: 100%; */
 }
 .logo-name img{
     height: 40px;
@@ -26,13 +27,13 @@ header{
 .logo-name h3{
     margin-left: 15px;
 }
-/* manu style start */
+/* manu style start 
 .hedar-content{
-   width: 950px;
+   /* width: 950px;
    height: 100%;
    display: flex;
    margin: auto;
-   justify-content: space-between;
+   justify-content: space-between; */
 
 }
 .manu ul{
@@ -147,4 +148,37 @@ hr{
     display: flex
   
 
+}
+/* mediya quries or responsivenss */
+/* mobiles devices */
+@media only screen and (max-width:688px) {
+   .container{
+       width: 100%;
+   }
+    .players, .blogs, .courses {
+       /* display: grid; */
+       grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .player, .blog{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section-titel h2{
+        margin: auto;
+    }
+
+}
+/* tabtet devices */
+@media only screen  and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+   .players, .courses{
+    grid-template-columns: repeat(2, 1fr);
+   }
+   .blogs{
+    grid-template-columns: repeat(1, 1fr);
+   }
+    
 }
